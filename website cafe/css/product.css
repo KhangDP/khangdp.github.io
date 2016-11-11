@@ -1,0 +1,59 @@
+#wrapp{
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+	background-image: url('../img/img wrap/body.jpg');
+	color: black;
+	overflow: hidden;
+}
+.cafe{
+	width: 100%;
+}
+.cropImage{
+	width: 1000px;
+	height: 400px;
+}
+.cropImage img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+.des{
+	width: 47.5%;
+	height: 200px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+	line-height: 25px;
+}
+.wsubitem{
+	width: 47.5%;
+	height: 200px;
+	float: right;
+	margin-top: 30px;
+	border-left: 1px solid #537535;
+}
+.wsubitem a{
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	padding-left: 25px;
+	color: black;
+}
+.wsubitem a:hover {
+	color: #537535;
+}
+#footer-product{
+	width: 1000px;
+	height: 150px;
+	margin-top: 30px;
+	border-top: 1px dashed #bba67d;
+	float: left;
+	position: relative;
+}
+#footer-product img{
+	position: absolute;
+	top: 50px;
+	left: 358px;
+}

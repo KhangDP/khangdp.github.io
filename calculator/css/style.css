@@ -1,0 +1,17 @@
+table{
+  background-color : #808080;
+  margin : auto;
+}
+h1{
+	text-align: center;
+}
+#result{
+  width : 410px;
+  height : 30px;
+}
+.btn{
+  width : 100px;
+}
+.btnd{
+  width : 210px;
+}

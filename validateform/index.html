@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/sytle.css">
+</head>
+<body>
+<div class="wrap">
+	<h1>Đăng ký tài khoản</h1>
+	<form action="result.html">
+		<input type="text" name="name" placeholder="Họ tên" class="inp" required="required">
+		<span class="erros"></span>
+		<br>
+		<input type="password" name="password" placeholder="Mật khẩu" class="inp">
+		<span class="erros"></span>
+		<br>
+		<input type="date" name="date" id="date" class="inp">
+		<br>
+		<div class="gen">
+		<input type="radio" name="gender" id="male" value="Nam"><label for="male">Male</label>
+		<input type="radio" name="gender" id="female" value="Nữ"><label for="female">Female</label><br>
+		</div>
+		<input type="text" name="address" placeholder="Địa chỉ" class="inp"><br>
+		<input type="text" name="phone" placeholder="Điện thoại" class="inp">
+		<span class="erros"></span>
+		<br>
+		<input type="text" name="facebook" placeholder="Facebook" class="inp">
+		<span class="erros"></span>
+		<br>
+		<button type="submit" name="sub" class="sub">Đăng ký</button>
+	</form>
+</div>
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/submit.js"></script>
+</body>
+</html>

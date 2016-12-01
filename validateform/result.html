@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="2">Đăng ký thành công</td>
+    </tr>
+    <tr>
+        <td>Xin chào:</td>
+        <td id="name" class="res"></td>
+    </tr>
+    <tr>
+        <td>Mật khẩu:</td>
+        <td id="password" class="res"></td>
+    </tr>
+     <tr>
+        <td>Ngày sinh:</td>
+        <td id="date" class="res"></td>
+    </tr>
+    <tr>
+        <td>Giới tính:</td>
+        <td id="gender" class="res"></td>
+    </tr>
+    <tr>
+        <td>Địa chỉ:</td>
+        <td id="address" class="res"></td>
+    </tr>
+    <tr>
+        <td>Điện thoại:</td>
+        <td id="phone" class="res"></td>
+    </tr>
+    <tr>
+        <td>Facebook:</td>
+        <td id="facebook" class="res"></td>
+    </tr>
+</table>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+ function getQueryVariable(variable){
+       var query = decodeURIComponent(window.location.search.substring(1));
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
+    var res = $(".res");
+    for(let i=0;i<res.length;i++){
+        if (res[i].id=="name") {
+            var n = getQueryVariable("name");
+            res[i].innerHTML = n.replace(/\+/g," ");
+        }
+         if (res[i].id=="password") {
+            res[i].innerHTML= getQueryVariable("password");
+        }
+         if (res[i].id=="date") {
+            res[i].innerHTML= getQueryVariable("date");
+        }
+         if (res[i].id=="gender") {
+            res[i].innerHTML= getQueryVariable("gender");
+        }
+         if (res[i].id=="address") {
+            res[i].innerHTML= getQueryVariable("address").replace(/\+/g," ");
+        }
+         if (res[i].id=="phone") {
+            res[i].innerHTML= getQueryVariable("phone");
+        }
+         if (res[i].id=="facebook") {
+            res[i].innerHTML= getQueryVariable("facebook");
+        }
+    }
+</script>
+</body>
+</html>
